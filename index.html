@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poona Hospital and Research Centre</title>
+    <title>Pride Multispeciality Hospital</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
         :root {
             --primary-blue: #1e3a8a;
             --secondary-blue: #3b82f6;
         }
-        
-        .top-bar { 
-            background-color: #e6f3ff; 
+
+        .top-bar {
+            background-color: #e6f3ff;
         }
-        
+
         .service-card {
             transition: all 0.3s ease;
         }
-        
+
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         .hero-section {
-            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
-                        url('/api/placeholder/1920/600') center/cover;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                url('/api/placeholder/1920/600') center/cover;
             min-height: 600px;
         }
 
@@ -40,21 +41,22 @@
         }
 
         .appointment-form {
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
         }
 
         .doctor-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         .stats-section {
-            background: linear-gradient(rgba(30,58,138,0.95), rgba(30,58,138,0.95)),
-                        url('/api/placeholder/1920/400') center/cover;
+            background: linear-gradient(rgba(30, 58, 138, 0.95), rgba(30, 58, 138, 0.95)),
+                url('/api/placeholder/1920/400') center/cover;
         }
     </style>
 </head>
+
 <body class="font-sans">
     <!-- Top Bar -->
     <div class="top-bar py-2">
@@ -62,20 +64,21 @@
             <button class="bg-blue-700 text-white px-4 py-1 rounded hover:bg-blue-800 transition">
                 FIND A DOCTOR
             </button>
-            <div class="flex gap-6">
-                <div class="flex items-center gap-2">
-                    <img src="/api/placeholder/24/24" alt="Blood Bank" class="w-6">
-                    <span>24 HOUR BLOOD BANK SERVICE</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <img src="/api/placeholder/24/24" alt="Emergency" class="w-6">
-                    <span>Emergency: 020 66096000</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <img src="/api/placeholder/24/24" alt="Appointment" class="w-6">
-                    <span>Appointment: +91 97305 59600</span>
-                </div>
+            <div class="flex items-center gap-2">
+                <strong>🩸</strong>
+                <span>24 HOUR BLOOD BANK SERVICE</span>
             </div>
+
+            <div class="flex items-center gap-2">
+                <strong>🚑</strong>
+                <span>Emergency: 020 66096000</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <strong>📞</strong>
+                <span>Appointment: +91 97305 59600</span>
+            </div>
+
         </div>
     </div>
 
@@ -84,11 +87,12 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-4">
-                    <img src="/api/placeholder/200/60" alt="Poona Hospital Logo" class="h-16">
+                    <img src="./infinity-medical-logo_633982-157.avif" alt="Pride Multispeciality Hospital"
+                        class="h-16">
                     <div class="flex space-x-2">
-                        <img src="/api/placeholder/50/50" alt="ISO Certified" class="h-12">
-                        <img src="/api/placeholder/50/50" alt="NABH Accredited" class="h-12">
-                        <img src="/api/placeholder/50/50" alt="Quality Seal" class="h-12">
+                        <img src="./download.png" alt="ISO Certified" class="h-12">
+                        <img src="./images.jpeg" alt="NABH Accredited" class="h-12">
+                        <img src="./download (1).png" alt="Quality Seal" class="h-12">
                     </div>
                 </div>
                 <div class="hidden md:flex space-x-8">
@@ -102,26 +106,24 @@
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section class="hero-section flex items-center">
-        <div class="container mx-auto px-4">
+        <div class="hero-overlay"></div>
+        <div class="container mx-auto px-4 hero-content">
             <div class="flex flex-wrap items-center">
                 <div class="w-full lg:w-1/2 pr-8">
-                    <h1 class="text-5xl font-bold mb-6">
+                    <h1 class="text-5xl font-bold text-white mb-6">
                         CITY'S ONE OF THE BEST<br>
-                        <span class="text-red-600">EMERGENCY</span> AND<br>
-                        <span class="text-blue-600">TRAUMA UNIT</span>
+                        <span class="text-red-400">EMERGENCY</span> AND<br>
+                        <span class="text-blue-400">TRAUMA UNIT</span>
                     </h1>
-                    <p class="text-gray-600 text-lg mb-8">
-                        Providing world-class healthcare with state-of-the-art facilities and experienced medical professionals.
+                    <p class="text-gray-300 text-lg mb-8">
+                        Providing world-class healthcare with state-of-the-art facilities and experienced medical
+                        professionals.
                     </p>
                     <button class="bg-blue-700 text-white px-8 py-3 rounded-lg text-lg hover:bg-blue-800 transition">
                         VISIT US
                     </button>
-                </div>
-                <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
-                    <img src="/api/placeholder/600/400" alt="Emergency Unit" class="rounded-lg shadow-2xl">
                 </div>
             </div>
         </div>
@@ -213,7 +215,8 @@
                     <input type="tel" placeholder="Phone Number *" class="w-full px-4 py-2 border rounded-lg">
                     <input type="email" placeholder="Email ID *" class="w-full px-4 py-2 border rounded-lg">
                     <textarea placeholder="Message" class="w-full px-4 py-2 border rounded-lg h-32"></textarea>
-                    <button type="submit" class="w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 transition">
+                    <button type="submit"
+                        class="w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 transition">
                         Submit
                     </button>
                 </form>
@@ -286,10 +289,11 @@
 
         // Form Validation
         const appointmentForm = document.querySelector('form');
-        appointmentForm.addEventListener('submit', function(e) {
+        appointmentForm.addEventListener('submit', function (e) {
             e.preventDefault();
             // Add form validation logic here
         });
     </script>
 </body>
+
 </html>
